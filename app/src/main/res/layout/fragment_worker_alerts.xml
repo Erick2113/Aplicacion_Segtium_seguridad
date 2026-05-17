@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/segtium_cream"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvAlertsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mis Alertas Recientes"
+        android:textColor="@color/segtium_navy"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvNoAlertsWorker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No tienes alertas registradas"
+        android:textColor="@color/gray_text"
+        android:textSize="16sp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvWorkerAlerts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvAlertsTitle"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"/>
+
+</RelativeLayout>

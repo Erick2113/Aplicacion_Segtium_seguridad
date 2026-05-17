@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/segtium_cream">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Configuración"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/segtium_navy"
+            android:layout_marginBottom="24dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFFFFF"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Preferencias de Monitoreo"
+                    android:textStyle="bold"
+                    android:textColor="@color/segtium_navy"
+                    android:layout_marginBottom="12dp"/>
+
+                <Switch
+                    android:id="@+id/switchVigilancia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vigilancia Activa"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:thumbTint="@color/segtium_navy"
+                    android:trackTint="#B0BEC5" />
+
+                <Switch
+                    android:id="@+id/switchAlarmaGlobal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alarmas Sonoras"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:thumbTint="@color/segtium_navy"
+                    android:trackTint="#B0BEC5" />
+
+                <Switch
+                    android:id="@+id/switchNotificaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notificaciones Push"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:thumbTint="@color/segtium_navy"
+                    android:trackTint="#B0BEC5" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFFFFF"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Límite de Temperatura (°C)"
+                    android:textStyle="bold"
+                    android:textColor="@color/segtium_navy"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etLimiteTemp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Ej. 38.0"
+                        android:inputType="numberDecimal"
+                        android:padding="12dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#999999"
+                        android:background="@drawable/edittext_background" />
+
+                    <Button
+                        android:id="@+id/btnGuardarTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OK"
+                        android:layout_marginStart="8dp"
+                        android:backgroundTint="@color/segtium_navy"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardAdminMaster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gestión de Administradores"
+                    android:textStyle="bold"
+                    android:textColor="@color/segtium_navy"
+                    android:layout_marginBottom="12dp"/>
+
+                <Button
+                    android:id="@+id/btnAgregarAdmin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Registrar Nuevo Administrador"
+                    android:backgroundTint="@color/segtium_navy"
+                    android:textColor="@color/white"
+                    android:drawableStart="@android:drawable/ic_menu_add"
+                    android:paddingStart="16dp"
+                    android:drawablePadding="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/btnVerAdmins"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ver Administradores"
+                    android:backgroundTint="@color/segtium_navy"
+                    android:textColor="@color/white"
+                    android:drawableStart="@android:drawable/ic_menu_my_calendar"
+                    android:paddingStart="16dp"
+                    android:drawablePadding="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/btnVerBajas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ver Usuarios de Baja"
+                    android:backgroundTint="#607D8B"
+                    android:textColor="@color/white"
+                    android:drawableStart="@android:drawable/ic_menu_delete"
+                    android:paddingStart="16dp"
+                    android:drawablePadding="8dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Switch
+            android:id="@+id/switchSimulacro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modo Simulacro"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#D32F2F"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar Sesión"
+            android:backgroundTint="#607D8B"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

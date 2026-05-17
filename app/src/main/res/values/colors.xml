@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="segtium_navy">#0B132B</color>
+    <color name="segtium_cream">#F3F0DF</color>
+    <color name="segtium_grey">#607D8B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray_text">#666666</color>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_worker_dashboard"
+        android:icon="@drawable/outline_browse_24"
+        android:title="Panel" />
+    <item
+        android:id="@+id/nav_worker_alerts"
+        android:icon="@drawable/outline_add_alert_24"
+        android:title="Alertas" />
+    <item
+        android:id="@+id/nav_worker_settings"
+        android:icon="@drawable/outline_admin_panel_settings_24"
+        android:title="Ajustes" />
+</menu>

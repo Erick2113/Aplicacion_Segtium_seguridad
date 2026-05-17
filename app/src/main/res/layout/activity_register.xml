@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/segtium_cream">
+
+    <com.example.wearableseguridad.CurvedImageView
+        android:id="@+id/curvedHeader"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/imagenregistro" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="160dp"
+                android:src="@drawable/logoapp"
+                android:elevation="4dp"/>
+
+            <TextView
+                android:id="@+id/tvRegisterTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registro de Usuario"
+                android:textColor="@color/segtium_navy"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/tvRegisterSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completa la información requerida"
+                android:textColor="@color/gray_text"
+                android:textSize="14sp"
+                android:layout_marginBottom="24dp"/>
+
+            <EditText
+                android:id="@+id/etRegisterNombre"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Nombre Completo"
+                android:textColor="@color/black"
+                android:textColorHint="#999999"
+                android:background="@drawable/edittext_background"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="12dp"
+                android:inputType="textPersonName"
+                android:elevation="2dp"/>
+
+            <EditText
+                android:id="@+id/etRegisterEmail"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Correo electrónico"
+                android:textColor="@color/black"
+                android:textColorHint="#999999"
+                android:background="@drawable/edittext_background"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="12dp"
+                android:inputType="textEmailAddress"
+                android:elevation="2dp"/>
+
+            <EditText
+                android:id="@+id/etRegisterPassword"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Contraseña"
+                android:textColor="@color/black"
+                android:textColorHint="#999999"
+                android:background="@drawable/edittext_background"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="12dp"
+                android:inputType="textPassword"
+                android:elevation="2dp"/>
+
+            <EditText
+                android:id="@+id/etRegisterArea"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Área de trabajo"
+                android:textColor="@color/black"
+                android:textColorHint="#999999"
+                android:background="@drawable/edittext_background"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="12dp"
+                android:inputType="text"
+                android:elevation="2dp"/>
+
+            <TextView
+                android:id="@+id/tvLabelChaleco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Asignar Chaleco:"
+                android:textColor="@color/segtium_navy"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/spinnerChaleco"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/edittext_background"
+                android:layout_marginBottom="24dp"
+                android:elevation="2dp" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Registrar"
+                android:backgroundTint="@color/segtium_navy"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:cornerRadius="12dp"/>
+
+            <TextView
+                android:id="@+id/tvBackToLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Cancelar"
+                android:textColor="@color/segtium_navy"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

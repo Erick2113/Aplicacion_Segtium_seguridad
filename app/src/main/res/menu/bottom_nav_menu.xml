@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_panel"
+        android:icon="@drawable/outline_browse_24"
+        android:title="Panel" />
+    <item
+        android:id="@+id/nav_alerts"
+        android:icon="@drawable/outline_add_alert_24"
+        android:title="Alertas" />
+    <item
+        android:id="@+id/nav_workers"
+        android:icon="@drawable/outline_article_person_24"
+        android:title="Trabajadores" />
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/outline_admin_panel_settings_24"
+        android:title="Ajustes" />
+</menu>

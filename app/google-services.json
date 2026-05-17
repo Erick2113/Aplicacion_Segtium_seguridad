@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "63035192415",
+    "firebase_url": "https://wearable-cloud-9bc89-default-rtdb.firebaseio.com",
+    "project_id": "wearable-cloud-9bc89",
+    "storage_bucket": "wearable-cloud-9bc89.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63035192415:android:15cafb94ae4b4c149457ea",
+        "android_client_info": {
+          "package_name": "com.example.wearableseguridad"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpQI83AIYPaaHplD3lS3BCkqBUo1x63Ik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
